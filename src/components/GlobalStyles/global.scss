@@ -9,16 +9,24 @@
 //variables
 
 :root {
-    --orange : #ff9138;
-    --white  : #ffffff;
-    --boder  : 1.5px solid #d4d4d7;
-    --bglogin: #e6e6e6;
-    --red    : #e73f3f;
+    --orange      : #ff9138;
+    --dark-orange : #ff7506;
+    --white       : #ffffff;
+    --boder       : 1.5px solid #d4d4d7;
+    --bglogin     : #e6e6e6;
+    --red         : #e73f3f;
+    --black       : #37474f;
+    --drop-shadow : drop-shadow(0px 0px 6px #e7e9f2);
+    --gray        : #7e7d88;
+    --dark-gray   : #535261;
+    --blue        : #6493f9;
+    --green       : #35c75a;
+    --light-orange: #ffac6a;
+    --pink        : #f86d6d;
+    --dark-blue   : #4277ff;
+    --bg-dark-blue: #5185f7;
 }
 
-html {
-    // font-size: 62.5%;
-}
 
 body {
     font-family: 'Nunito', sans-serif;
@@ -39,7 +47,8 @@ img {
 }
 
 input,
-button {
+button,
+select {
     outline: none;
     border : none;
 }
@@ -66,4 +75,40 @@ button {
 
 .border {
     border: 1.5px solid var(--red) !important;
+}
+
+.Layout {
+    width        : 1440px;
+    height       : 810px;
+    margin       : 0 auto;
+    position     : relative;
+    background   : var(--bglogin);
+    border-radius: 16px;
+}
+
+.boxTopbar {
+    width   : 1240px;
+    height  : 88px;
+    position: relative;
+    z-index : 100;
+}
+
+.container {
+    width  : 100%;
+    padding: 29px 64px 29px 24px;
+}
+
+.context {
+    position: relative;
+}
+
+.title {
+    font-size  : 24px;
+    line-height: 36px;
+    color      : var(--orange);
+}
+
+.box {
+    margin-top : 16px;
+    margin-left: 24px;
 }
